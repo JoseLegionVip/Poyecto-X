@@ -8,6 +8,8 @@ echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/
 curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
 apt-get update
 apt-get install neofetch
+echo "clear" >> .bash_profile
+echo "menu" >> .bash_profile
 
 # install complemento
 apt-get update
@@ -129,9 +131,6 @@ sleep 2
 tput setaf 3 ; tput bold ; echo "            INSTALANDO PYTHON3 APN BITEL"; tput sgr0
     wget https://raw.githubusercontent.com/JoseLegionVip/Poyecto-X/master/proxy53.py 1> /dev/null 2> /dev/stdout
     chmod +x proxy53.py
-sleep 2
-echo "clear" >> .bash_profile
-echo "menu" >> .bash_profile
 clear
 echo -e "\033[0;34m-----------------------------------------------\033[0m"
 echo -e "\033[1;33m                JOSE LEGION VIP \033[0m"
